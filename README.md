@@ -1,2 +1,12 @@
 # CPTS223
-CPTS 223 class projects
+
+To compile: g++ -std=c++11 -o PA1 *.cpp 
+To run: ./PA1
+
+Linked List Implementation
+    - Advantage:
+    - Disadvantage:
+
+Array Implementation
+    - Advantage:
+    - Disadvantage:
