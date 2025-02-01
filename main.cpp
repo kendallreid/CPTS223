@@ -4,7 +4,7 @@ int main()
 {
     Wrapper game;
     game.runApp();
-    
+
     return 0;
 }
 /*Linked List Implementation: Use a singly linked list with a class template for ‘Node’ and ‘List’ (This should
