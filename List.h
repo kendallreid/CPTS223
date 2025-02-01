@@ -10,7 +10,10 @@ public:
     ~List();
 
     Node<T>* getHead() const {return _head}
-    void insertAtFront(T command, T definition);
+    bool isEmpty() {return _head == nullptr}
+    bool insertAtFront(T command, T definition);
+    bool removeNode(T command);
+    
 
 private:
     Node<T>* _head;
@@ -23,14 +26,41 @@ inline List<T>::~List()
 { destroyList(); }
 
 template <typename T>
-inline void List<T>::insertAtFront(T command, T definition)
+inline bool List<T>::insertAtFront(T command, T definition)
 {
+    bool success = false;
     Node<T>* pMem = new Node<T>(command, definition);
 
     if(pMem)
     {
         pMem->setNext(_head);
         _head = pMem;
+        success = true;
+    }
+    return success;
+}
+
+template <typename T>
+inline bool List<T>::removeNode(T command)
+{
+    bool success = false;
+    Node<T>* current = _head, prev = nullptr;
+    while(current)
+    {
+        if(current.getCommand() == command)
+        {
+            if(current == _head)  // If front of list
+            {
+                _head = current.getNext();
+            }
+            else
+            {
+                prev.setNext(current.getNext());
+            }
+            delete current;
+        }
+        prev = current;
+        current = current->getNext();
     }
 }
 

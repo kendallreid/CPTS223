@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "Wrapper.h"
 
 int main()
 {
@@ -26,13 +26,7 @@ to the way the list is used in THIS assignment. This should be in the README fil
 • 3 pts (1.5 pts/advantage and disadvantage) for listing 1 advantage and 1 disadvantage of using an array
 for the data structure involved with storing the user profiles; you must relate your ideas to the way the list
 is used in THIS assignment. This should be in the README file.
-• 25 pts for developing a correct class List, template with 1 parameter
-o 6 pts for correct insertAtFront()– needed when loading from commands.csv
-• 7 pts for correct removeNode()– needed when removing commands from the list
-• 8 pts for other functions needed to operate on the list
-• 2 pts for correct data members
-• 2 pts for correct constructors/destructors
-• 7 pts for correct implementation of class Node template with 1 parameter
+
 • 5 pts for correct implementation of concrete class Data
 • 3 pts for satisfying the Main Menu Requirement
 • 18 pts for satisfying the Play Game Requirement
