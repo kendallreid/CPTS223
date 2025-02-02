@@ -13,10 +13,27 @@ void Wrapper::displayRules()
         << endl << "Points will be rewarded or deducted for correct and incorrect answers respectively." << endl << "You may save and exit at any time." << endl;
 }
 
+Wrapper::Wrapper()
+{
+    //ifstream inputCommands;
+    ofstream outputProfiles;
+
+    //inputCommands.open("commands.csv");
+    //outputProfiles.open("profiles.csv");
+}
+
+Wrapper::~Wrapper()
+{
+    //inputCommands.close();
+    //outputProfiles.close();
+}
+
 void Wrapper::runApp()
 {
     int menuChoice = 0, questions = 0;
     string name = "";
+
+    List<string> linkedList;
     do
     {
         displayMenu();

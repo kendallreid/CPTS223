@@ -1,0 +1,30 @@
+pwd, Print working directory, 1  
+ls, List files and directories in current directory, 1  
+cd, Change current working directory, 1  
+mkdir, Create a directory, 1  
+rmdir, Delete a directory, 1  
+rm, Delete a file, 1  
+cp, Copy files or directories, 1  
+mv, Move or rename a file or directory, 1  
+ssh, Securely connect to a remote machine, 2  
+scp, Securely copy files between machines, 2  
+man, Display manual pages for commands, 2  
+g++, Compile C++ programs, 2  
+gcc, Compile C programs, 2  
+make, Automate build processes using Makefile, 2  
+ps, Display currently running processes, 2  
+kill, Terminate a process by PID, 2  
+top, Display system resource usage and active processes, 2  
+who, Show currently logged-in users, 3  
+chmod, Change file permissions, 3  
+cat, Display the contents of a file, 3  
+alias, Create a shortcut for a command, 3  
+chown, Change file owner or group, 3  
+df, Show disk space usage, 3  
+grep, Search for text in files using patterns, 3  
+echo, Print text or variables to the terminal, 2  
+find, Search for files and directories, 4  
+clear, Clear the terminal screen, 1  
+diff, Compare the differences between files, 2  
+env, Display or modify environment variables, 4  
+free, Show memory usage details, 3
